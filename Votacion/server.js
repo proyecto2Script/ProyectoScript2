@@ -85,7 +85,7 @@ app.get('/votante/:usuario', function(req, res){
 				objUser = users[i];
 			}
 		}
-		res.render('perfilVotante',{'perfil':objUser});
+		res.render('indexVotante',{'perfil':objUser});
     });
 
 });
