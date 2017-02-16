@@ -1,18 +1,62 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/callback.js"></script>
-	<title>Proyecto Parcial 2</title>
-</head>
-<body>
-<h1>Login Votante</h1>
-	<!-- <form id="login" method="POST" action="/login"> -->
-	<form id="loginVotante">
-	<legend>Log In</legend>
-		<label>Cedula:</label>
-		<input type="text" name="cedula"><br>
-		<input type="button" value="Ingresar" onclick="loginVotanteAjax()">
-		<input type="button" value="Cancelar" onclick="cancel()">
-	</form>    
-</body>
+	<head>
+		<title>EXIT-POLL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/main.css" />
+		
+	</head>
+	<body style="background-color: #666">
+		
+			<!-- Header -->
+				<header id="header" class="alt">
+					
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a id="logOut" class="button">Log out</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			
+            <div >
+			    
+				<section id="cta">
+                    <section id="banner">
+					<h2></h2>
+					<p>Ingrese su cedula para acceder al sistema de votacion</p>
+
+					<form id="loginVotante">
+					
+						<div class="row uniform 50%">
+							<div class="8u 12u(mobilep)">
+								<input type="text" name="cedula" id="cedula" placeholder="Cedula" />
+								
+							</div>
+							<div class="4u 12u(mobilep)">
+							    
+								<input type="button" value="Ingresar" onclick="loginVotanteAjax()">
+                                
+							</div>
+						</div>
+				    </form>
+				    </section>
+               </section>
+			        	
+							
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/jquery.dropotron.min.js"></script>
+			<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+			<script src="../js/jquery.scrollgress.min.js"></script>
+			<script src="../js/skel.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
+            <script type="text/javascript" src="js/callback.js"></script>
+	</body>
 </html>
