@@ -1,0 +1,25 @@
+{
+  "name": "proyecto2script",
+  "version": "1.0.0",
+  "description": "Proyecto Segundo Parcial Script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proyecto2Script/ProyectoScript2.git"
+  },
+  "author": "Hernan Quinde, William Montalvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proyecto2Script/ProyectoScript2/issues"
+  },
+  "dependencies": {
+  "async": "*",
+  "express": "*",
+  "body-parser": "*",
+  "ejs": "*"
+  },
+  "homepage": "https://github.com/proyecto2Script/ProyectoScript2#readme"
+}

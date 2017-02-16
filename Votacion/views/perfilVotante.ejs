@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/callback.js"></script>
+	<title>Clase 22  - Usuario EJS </title>
+</head>
+<body>
+	<h1>Bienvenido a su perfil</h1>
+	<form id="reg" method="POST" action="/user">
+	<legend>Mi perfil</legend>
+		<label>User:</label>
+		<input type="text" name="usuario" value="<%= perfil.usuario %>"><br>
+		<label>Pass:</label>
+		<input type="password" name="clave"><br>
+		<label>Repeat-Pass:</label>
+		<input type="password" name="clave2"><br>
+		<label>Name:</label>
+		<input type="text" name="name" value="<%= perfil.name %>"><br>
+		<label>Email:</label>
+		<input type="text" name="email" value="<%= perfil.email %>"><br>
+
+		<input type="button" value="Enviar" onclick="submit()">
+		<input type="button" value="Cancelar" onclick="cancel()">
+	</form>
+
+
+</body>
+</html>
