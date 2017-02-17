@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EXIT-POLL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/callback.js"></script>
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="" id="btnout" class="button" >Logout</a></li>
+						</ul>
+					</nav>
+				</header>
+            
+            <!-- Banner -->
+            <div id="inicio">
+				<section id="banner">
+				    <h2>Exit-Poll</h2>
+				</section>
+            </div>
+			
+			<!-- Main -->
+				<section id="main" class="container">
+                    <section class="box special">
+                    <header class="major">
+							<h2>Lista de candidatos para la Elección Presidencial(19 febrero 2017)</h2>
+							<p>Podra escoger entre ver los candidatos por dignidades o ver todos los candidatos </p>
+						</header>
+					</section>
+
+    <form action="/candidato/<% candid.Id %>" method="POST">
+			<label>Name:</label>
+			<label><%= candid.Nombre %></label>
+			<br>
+			<label>Lista:</label>
+			<label><%= candid.Lista %></label>
+			
+			<br>
+			<label>Partido:</label>
+			<label><%= candid.Partido %></label>
+			
+			<br>
+			<label>Foto:</label>
+			<img src="../../<%=candid.Foto%>" >
+			
+			<br>
+			<label>Logo:</label>
+			<img src="../../<%=candid.Logo%>" >
+			
+			<br><br>
+			
+		</form>
+					
+								
+                    
+            </section>
+        </div>					
+								
+
+		<!-- Scripts -->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/jquery.dropotron.min.js"></script>
+			<script src="../js/jquery.scrollgress.min.js"></script>
+			<script src="../js/skel.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
+                    
+	</body>
+</html>

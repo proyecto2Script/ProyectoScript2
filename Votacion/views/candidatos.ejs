@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EXIT-POLL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/callback.js"></script>
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="" id="btnout" class="button" >Logout</a></li>
+						</ul>
+					</nav>
+				</header>
+            
+            <!-- Banner -->
+            <div id="inicio">
+				<section id="banner">
+				    <h2>Exit-Poll</h2>
+				</section>
+            </div>
+			
+			<!-- Main -->
+				<section id="main" class="container">
+                    <section class="box special">
+                    <header class="major">
+							<h2>Lista de candidatos para la Elección Presidencial(19 febrero 2017)</h2>
+							<p>Podra escoger entre ver los candidatos por dignidades o ver todos los candidatos </p>
+						</header>
+					</section>
+
+					
+					<div class="table-wrapper">
+						<table id ="tabla">					<thead>
+								<tr>
+                                    <th>Dignidad</th>	<th>Logo </th>
+								    <th>Candidato</th>
+									<th>Lista</th>
+									<th>Partido</th>
+									
+									</tr>
+										</thead>
+				<tbody>
+            		<% var arrCandidatos = candidato; 
+                    for(var i in arrCandidatos){%> 
+                        <tr>
+                             <td><%=arrCandidatos[i].Dignidad%></td> 
+                             <td><img src="../../<%=arrCandidatos[i].Logo%>" ></td>                       
+                             <td ><%=arrCandidatos[i].Nombre%></td>
+                             <td><%=arrCandidatos[i].Lista%></td>
+                             <td><%=arrCandidatos[i].Partido%></td> 
+                             <td><a href="/candidato/<%= arrCandidatos[i].Id %>">Mostrar</a></td>
+<!--                             <td><a onclick="Mostrar('')">Mostrar</a></td>
+                             -->                                              </tr>
+                              <%}%>
+											    </tbody>
+										</table>
+                                    </div>
+								
+            </section>
+        </div>					
+								
+
+		<!-- Scripts -->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/jquery.dropotron.min.js"></script>
+			<script src="../js/jquery.scrollgress.min.js"></script>
+			<script src="../js/skel.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
+                    
+	</body>
+</html>
